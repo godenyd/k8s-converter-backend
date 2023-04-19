@@ -21,6 +21,7 @@
         <java.version>17</java.version>
         <lombok.version>1.18.26</lombok.version>
         <log4jdbc.log4j2.version>1.16</log4jdbc.log4j2.version>
+        <k8s.converter.version>0.1.0</k8s.converter.version>
     </properties>
 
     <dependencies>
@@ -50,7 +51,7 @@
         <dependency>
             <groupId>hu.godenyd.k8s</groupId>
             <artifactId>k8s-converter</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>${k8s.converter.version}</version>
         </dependency>
 
         <dependency>
