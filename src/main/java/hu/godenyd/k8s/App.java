@@ -18,11 +18,11 @@ public class App {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                System.out.println("app cors register");
                 registry.addMapping("/convert")
                         .allowedMethods("POST", "GET", "OPTIONS")
                         .allowedHeaders("Content-Type, Accept")
-                        .allowedOrigins("*");
+                        .allowedOrigins("*")
+                        .allowCredentials(false);
             }
         };
     }
