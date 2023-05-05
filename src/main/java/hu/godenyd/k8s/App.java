@@ -23,6 +23,12 @@ public class App {
                         .allowedHeaders("Content-Type, Accept")
                         .allowedOrigins("*")
                         .allowCredentials(false);
+
+                registry.addMapping("/templates")
+                        .allowedMethods("POST", "GET", "OPTIONS")
+                        .allowedHeaders("Content-Type, Accept")
+                        .allowedOrigins("*")
+                        .allowCredentials(false);
             }
         };
     }
